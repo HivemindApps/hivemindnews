@@ -9,10 +9,21 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "body-parser": "^1.8.2",
+    "bcryptjs": "^2.3.0",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "bson": "^0.4.23",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.7.1",
+    "dotenv": "^2.0.0",
     "express": "^4.9.3",
+    "express-session": "^1.13.0",
+    "helmet": "^2.1.1",
     "morgan": "^1.1.1",
-    "serve-favicon": "^2.0.1"
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.0.1",
+    "thinky": "^2.3.2"
   },
   "devDependencies": {
     "browser-sync": "~2.11.2",
@@ -72,7 +83,7 @@
     "node-notifier": "^4.0.3",
     "plato": "^1.2.0",
     "q": "^1.0.1",
-    "rethinkdb":"^2.3.2",
+    "rethinkdb": "^2.3.2",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.6.0",
     "wiredep": "^2.2.2",

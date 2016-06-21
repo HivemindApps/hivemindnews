@@ -5,9 +5,9 @@
     .module('app.user')
     .controller('UserController', UserController);
 
-  UserController.$inject = ['$q', 'dataservice', 'logger', '$log'];
+  UserController.$inject = ['$q', 'dataservice', 'logger'];
   /* @ngInject */
-  function UserController($q, dataservice, logger, $log) {
+  function UserController($q, dataservice, logger) {
     var vm = this;
     // vm.news = {
     //   title: 'User',
@@ -20,7 +20,6 @@
     activate();
 
     function activate() {
-      $log.info("activated user view."); 
       var promises = [getMessageCount(), getPeople()];
       return $q.all(promises).then(function() {
         logger.info('Activated User View');

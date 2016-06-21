@@ -5,9 +5,9 @@
     .module('app.layout')
     .controller('ShellController', ShellController);
 
-  ShellController.$inject = ['$rootScope', '$timeout', 'config', 'logger'];
+  ShellController.$inject = ['$rootScope', '$timeout', 'config', 'logger', '$mdSidenav'];
   /* @ngInject */
-  function ShellController($rootScope, $timeout, config, logger) {
+  function ShellController($rootScope, $timeout, config, logger, $mdSidenav) {
     var vm = this;
     vm.busyMessage = 'Loading ...';
     vm.isBusy = true;
@@ -17,6 +17,12 @@
       text: 'Created by John Papa',
       link: 'http://twitter.com/john_papa'
     };
+
+    vm.toggleSidenav = function(menuId) {
+      logger.info(menuId, "has been triggered.");
+      $mdSidenav(menuId).toggle();
+    };
+
 
     activate();
 

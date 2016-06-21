@@ -1,11 +1,15 @@
-var router = require('express').Router();
 var four0four = require('./utils/404')();
 var data = require('./data');
+var express = require('express'); 
+var router = require('express').Router();
+var app = express(); 
 
 router.get('/user', getUser); 
 router.get('/people', getPeople);
 router.get('/person/:id', getPerson);
 router.get('/*', four0four.notFoundMiddleware);
+
+app.use('/user', require('./routes/UserRoutes.js')); 
 
 module.exports = router;
 
