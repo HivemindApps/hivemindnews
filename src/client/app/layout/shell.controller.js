@@ -14,15 +14,14 @@
     $rootScope.showSplash = true;
     vm.navline = {
       title: config.appTitle,
-      text: 'Created by John Papa',
-      link: 'http://twitter.com/john_papa'
+      text: 'Created by Dylan Lott',
+      link: 'http://twitter.com/dylanlott'
     };
 
     vm.toggleSidenav = function(menuId) {
       logger.info(menuId, "has been triggered.");
       $mdSidenav(menuId).toggle();
     };
-
 
     activate();
 
