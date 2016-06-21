@@ -1,22 +1,6 @@
-<!-- <nav class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-header">
-    <a href="/" class="navbar-brand"><span class="brand-title">{{vm.navline.title}}</span></a>
-    <a class="btn navbar-btn navbar-toggle" ng-click="isCollapsed = !isCollapsed">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
-  </div>
-  <div class="navbar-collapse collapse" uib-collapse="isCollapsed">
-    <div class="pull-right navbar-logo">
-
-    </div>
-  </div>
-</nav> -->
-<md-toolbar layout="row" ng-controller="ShellController as vm">
+<md-toolbar layout="row" layout-align="end none" ng-controller="ShellController as vm">
   <md-button ng-click="vm.toggleSidenav('left')" hide-gt-sm class="md-icon-button">
-<!--     <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon> -->
-<md-icon class="fa fa-bars fa-2x"></md-icon>
+    <i class="fa fa-bars fa-2x"></i>
   </md-button>
   <h2 class="md-toolbar-tools md-toolbar-tools-bottom text-white" layout="row">
     Hivemind News

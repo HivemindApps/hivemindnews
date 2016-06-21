@@ -1,5 +1,5 @@
 <div ng-controller="SidebarController as vm" layout="column">
-  <md-sidenav when-done-animating="vm.sidebarReady()" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+  <md-sidenav when-done-animating="vm.sidebarReady()" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" style="height: 100vh;">
     <md-toolbar class="md-tall md-hue-2">
       <span flex></span>
       <div layout="column" class="md-toolbar-tools-bottom inset" ng-if="vm.user.loggedIn">
@@ -11,8 +11,10 @@
       <div layout="column" class="md-toolbar-tools-bottom inset" ng-if="!vm.user.loggedIn">
         <user-avatar></user-avatar>
         <span></span>
-        <div>Login</div>
-        <div>Sign up</div>
+        <div layout="row">
+          <md-button ui-sref="signup" class="md-primary">Sign Up</md-button>
+          <md-button ui-sref="login" class="md-primary">Login</md-button>
+        </div>
       </div>
     </md-toolbar>
     <md-list>
