@@ -18,7 +18,7 @@
         config: {
           url: '/user',
           templateUrl: 'app/user/user.html',
-          controller: 'userController',
+          controller: 'UserController',
           controllerAs: 'vm',
           title: 'user',
           settings: {
