@@ -72,6 +72,7 @@
     "node-notifier": "^4.0.3",
     "plato": "^1.2.0",
     "q": "^1.0.1",
+    "rethinkdb":"^2.3.2",
     "sinon": "^1.12.2",
     "sinon-chai": "^2.6.0",
     "wiredep": "^2.2.2",
